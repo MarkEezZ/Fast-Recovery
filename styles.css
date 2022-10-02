@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800;900&display=swap');
+
+html, body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #0d00b3;
+    font-size: 22px;
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+p {
+    margin: 0;
+    color: #121212;
+}
+h1 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 8vw;
+    font-weight: 700;
+    line-height: 0.9;
+}
+h2 {
+    margin: 0;
+    line-height: 0.9;
+}
+h3 {
+    margin: 0;
+    line-height: 0.9;
+    text-align: center;
+}
+
+.header_lines {
+    margin-bottom: 5vh;
+    line-height: 1;
+}
+.header_lines h2:nth-child(1) {
+    font-size: 3.5vw;
+}
+.header_lines h2:nth-child(2) {
+    text-transform: uppercase;
+    font-size: 2.53vw;
+}
+.header_lines > * {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.header_lines_earth {
+    color: white;
+    margin-bottom: 5vh;
+    line-height: 1;
+}
+.header_lines_earth h2:nth-child(1) {
+    font-size: 3.5vw;
+}
+.header_lines_earth h2:nth-child(2) {
+    text-transform: uppercase;
+    font-size: 5vw;
+}
+.header_lines_earth h2:nth-child(3) {
+    font-size: 3.4vw;
+}
+.header_lines_earth > * {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.section_2 {
+    background: url(./assets/sec_2_background.png);
+    background-size: cover;
+    overflow: hidden;
+}
+.white_fade {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: auto;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+    padding: 18vh 14vw;
+}
+.white_fade > * {
+    margin-bottom: 16vh;
+}
+
+.section_2 > p {
+    margin: 0 5%;
+}
+
+.picture {
+    color: white;
+    background-color: rgb(118, 108, 202);
+}
+
+.picture_block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    left: 3.5%;
+}
+
+.picture_1 {
+    width: auto;
+    background-color: rgb(118, 108, 202);
+    margin: 0 10%;
+    margin-bottom: 16vh;
+}
+.picture_2 {
+    position: relative;
+    background-color: #83ade4;
+    width: 42%;
+    height: auto;
+    z-index: 1;
+}
+.picture_3 {
+    position: relative;
+    left: -7%;
+    background-color: #8153b6;
+    width: 45%;
+    height: auto;
+}
+.picture_4 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8vh;
+}
+
+.picture_5 {
+    width: 30%;
+    height: auto;
+    margin-bottom: 8vh;
+}
+
+.headers_margin {
+    margin-top: 8vh;
+}
+
+.picture-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 10%;
+}
+
+.section_4  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 120vw;
+    padding-top: 8vh;
+    top: -1vw;
+}
+
+.section_4 > video {
+    position: absolute;
+    justify-self: center;
+    top: 15vw;
+    right: -10vw;
+    width: 60vw;
+}
+
+.not_earth {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24vh;
+    bottom: 0;
+}
+.not_earth > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16vh;
+    margin-left: 10%;
+}
+
+button {
+    margin: auto;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 40px;
+    color: black;
+    background-color: white;
+    width: 30%;
+    height: 10vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: rgb(0, 4, 255);
+    transition: 0.3s;
+}
+
+.chat_button {
+    position: sticky;
+    top: 0;
+    left: 90vw;
+    width: 70px;
+    height: 70px;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+footer > div {
+    margin: 0 10%;
+    padding-bottom: 16vh;
+    padding-top: 4vh;
+}
+footer {
+    font-size: 1.5rem;
+    background-color: black;
+}
+footer *{
+    color: white;
+}
+
+@media screen and (min-height: 100vw){
+    .section_4 {
+        height: 180vw;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .picture_block {
+        justify-content: flex-start;
+        left: 0;
+    }
+    .picture_2 {
+        width: 52%;
+    }
+    .picture_3 {
+        width: 55%;
+    }
+    .picture_1 {
+        margin: 0;
+        margin-bottom: 8vh;
+    }
+    .picture-text {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .header_lines h2:nth-child(1) {
+        font-size: 5vw;
+    }
+    .header_lines h2:nth-child(2) {
+        text-transform: uppercase;
+        font-size: 3.6vw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header_titles {
+        width: 62vw;
+    }
+    .header_titles > h2:nth-child(1) {
+        font-size: 4.5vw;
+    }
+    .header_titles > h2:nth-child(3) {
+        font-size: 4.5vw;
+        margin-right: 0;
+    } 
+    h1 {
+        font-size: 12vw;
+    }
+    .white_fade {
+        padding: 10vh 14vw;
+    }
+
+    .header_lines_earth h2:nth-child(1) {
+        font-size: 4.95vw;
+    }
+    .header_lines_earth h2:nth-child(2) {
+        font-size: 7vw;
+    }
+    .header_lines_earth h2:nth-child(3) {
+        font-size: 4.8vw;
+    }
+    .section_4 {
+        padding-top: 4vh;
+    }
+    button {
+        width: 50%;
+    }
+    .white_fade > * {
+        margin-bottom: 8vh;
+    }
+    .picture_5 {
+        margin: auto;
+        margin-bottom: 8vh;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .header_titles {
+        width: 72vw;
+    }
+    .header_titles > h2:nth-child(1) {
+        font-size: 5vw;
+    }
+    .header_titles > h2:nth-child(3) {
+        font-size: 5vw;
+        margin-right: 0;
+    }
+    h1 {
+        font-size: 14vw;
+    }
+    .picture-text {
+        width: 100%;
+    }
+    .header_lines h2:nth-child(1) {
+        font-size: 7vw;
+    }
+    .header_lines h2:nth-child(2) {
+        font-size: 5vw;
+    }
+    .section_4 {
+        padding-top: 4vh;
+    }
+    .header_lines_earth h2:nth-child(1) {
+        font-size: 7.1vw;
+    }
+    .header_lines_earth h2:nth-child(2) {
+        font-size: 10vw;
+    }
+    .header_lines_earth h2:nth-child(3) {
+        font-size: 6.8vw;
+    }
+    button {
+        width: 60%;
+    }
+    .not_earth > div {
+        margin-bottom: 10vh;
+    }
+    .not_earth {
+        margin-bottom: 8vh;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .header_lines h2:nth-child(1) {
+        font-size: 11vw;
+    }
+    .header_lines h2:nth-child(2) {
+        font-size: 9vw;
+    }
+}
+
+@media screen and (max-width: 400px){
+    button {
+        width: 80%;
+        border-radius: 30px;
+        padding: 0;
+        height: 8vh;
+        font-size: 1.2rem;
+    }
+    .not_earth {
+        margin-bottom: 16vh;
+    }
+}
+
+@media screen and (max-width: 320px){
+    footer p {
+        font-size: 1rem;
+    }
+
+    .section_2 p {
+        font-size: 18px;
+    }
+    .picture_5 {
+        width: 80%;
+    }
+}
